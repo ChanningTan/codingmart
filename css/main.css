@@ -12,8 +12,13 @@ body{
 .clear{
     clear: both;
 }
-.hidden{
-    display: none;
+.opacity0{
+    opacity: 0;
+    transition: opacity .4s;
+}
+.opacity1{
+    opacity: 1;
+    transition: opacity .4s;
 }
 
 
@@ -34,6 +39,7 @@ nav{
     float: left;
     position: absolute;
     top: 28px;
+    z-index: 99;
 }
 .nav-bar{
     width: 980px;
@@ -76,6 +82,7 @@ nav span{
     border-radius: 5px;
     float: right;
     transition: color .2s ease-in, border .2s ease-in;
+    cursor: pointer;
 }
 nav span:hover{
     color: rgba(255, 255, 255, 1);
@@ -89,6 +96,7 @@ nav span:hover{
     height: 600px;
     background: url('../res/bg1.jpg');
     background-size: cover;
+    z-index: 9;
 }
 #background1 .black{
     height: 600px;
@@ -112,7 +120,7 @@ nav span:hover{
 
 #background2{
     height: 600px;
-    background: linear-gradient(to right bottom,#4987E3,#4F97E4,#62C6EA);;
+    background: linear-gradient(to right bottom,#4987E3,#4F97E4,#62C6EA);
 }
 #background2>.content>div{
     display: inline-block;
@@ -200,6 +208,7 @@ header>ul>li{
     height: 30px;
     position: absolute;
     bottom: 100px;
+    z-index: 99;
 }
 #dots ul{
     width: 100px;
@@ -227,7 +236,7 @@ header>ul>li{
 .content{
     width: 980px;
     height: 300px;
-    background-color: rgba(0, 0, 0, .4);
+    /*background-color: rgba(0, 0, 0, .4);*/
     margin: 0px auto;
     padding-top: 170px;
 }

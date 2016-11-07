@@ -34,6 +34,23 @@ function imageToggle(){
     var len = li.length;
 
     function setPageView(index){
+        function setHidden(obj){
+            obj.classList.remove('opacity1');
+            obj.classList.add('opacity0');
+        }
+        function setShow(obj){
+            obj.classList.remove('opacity0');
+            obj.classList.add('opacity1');
+        }
+        function setIndex(){
+            for (var j=0; j<len; j++){
+                if (j == index){
+                    li[j].style['z-index'] = 9;
+                }else {
+                    li[j].style['z-index'] = 1;
+                }
+            }
+        }
 
         if (index >= len){
             index = 0;
@@ -43,13 +60,15 @@ function imageToggle(){
 
         for (var i=0; i<len; i++){
             if (i == index){
-                li[i].classList.remove("hidden");
                 li_dot[i].classList.add('selected');
+                setShow(li[i]);
             } else {
-                li[i].classList.add("hidden");
                 li_dot[i].classList.remove('selected');
+                setHidden(li[i]);
             }
         }
+
+        setTimeout(setIndex, 400);
     }
 
     function clickTurnRight(){
@@ -81,13 +100,34 @@ function imageToggle(){
         setPageView(i);
     }
 
+    var auto = setInterval(clickTurnRight, 4000);
+
     //add event-------------------
     for (var i=0; i<len; i++){
         EventUtil.addEvent(li_dot[i], 'click', clickDots);
-        EventUtil.addEvent(turnLeft, 'click', clickTurnLeft);
-        EventUtil.addEvent(turnRight, 'click', clickTurnRight);
+        EventUtil.addEvent(li_dot[i], 'mouseover', function(){
+            clearInterval(auto);
+        });
+        EventUtil.addEvent(li_dot[i], 'mouseout', function(){
+            auto = setInterval(clickTurnRight, 4000);
+        });
     }
 
+    EventUtil.addEvent(turnLeft, 'click', clickTurnLeft);
+    EventUtil.addEvent(turnLeft, 'mouseover', function(){
+        clearInterval(auto);
+    });
+    EventUtil.addEvent(turnLeft, 'mouseout', function(){
+        auto = setInterval(clickTurnRight, 4000);
+    });
+
+    EventUtil.addEvent(turnRight, 'click', clickTurnRight);
+    EventUtil.addEvent(turnRight, 'mouseover', function(){
+        clearInterval(auto);
+    });
+    EventUtil.addEvent(turnRight, 'mouseout', function(){
+        auto = setInterval(clickTurnRight, 4000);
+    });
 }
 
 imageToggle();
