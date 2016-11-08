@@ -1,12 +1,12 @@
 
-body, a, div, header, footer, nav, ul, li, p{
+body, a, div, header, footer, nav, ul, li, p, button{
     padding: 0px;
     margin: 0px;
     text-decoration: none;
     list-style-type: none;
 }
 
-body{
+body, button{
     font-family: "microsoft Yahei";
 }
 .clear{
@@ -308,6 +308,291 @@ header>ul>li{
     font-size: 14px;
     text-align: center;
 }
+
+
+
+/*内容部分---------------------------------------------*/
+
+#container{
+    width: 980px;
+    margin: 0px auto;
+}
+.process{
+    width: 100%;
+    height: 420px;
+    border-bottom: solid 1px #eaecee;
+    display: table;
+    position: relative;
+}
+.process-last{
+    width: 100%;
+    height: 420px;
+    display: table;
+    position: relative;
+}
+.content-text{
+    width: 392px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.right-img{
+    width: 588px;
+    margin: -147px 0px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+.left-img{
+    width: 588px;
+    margin: -147px 0px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+}
+#mpay-img{
+    width: 36px;
+    vertical-align: middle;
+}
+.container-icon{
+    vertical-align: middle;
+}
+
+
+
+.text2-1{
+    color: #2d3238;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 55px;
+}
+.text2-2{
+    color: #3a3238;
+    font-size: 12px;
+}
+.text2-3{
+    color: #2d3238;
+    font-size: 42px;
+    padding: 10px 0px;
+}
+.text2-4{
+    color: #9da5ad;
+    font-size: 14px;
+    padding: 8px 0px 16px;
+}
+.text2-5{
+    color: #4289db;
+    font-size: 14px;
+}
+
+
+
+
+#about-saying{
+    width: 100%;
+    height: 560px;
+    background-color: #dde3eb;
+}
+.people{
+    width: 996px;
+    margin: 30px auto 0px;
+}
+.saying{
+    width: 314px;
+    height: 336px;
+    background-color: #fff;
+    border-left: solid 1px #d5dbe3;
+    border-right: solid 1px #d5dbe3;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0px 8px;
+    float: left;
+}
+.saying-text{
+    height: 174px;
+    font-size: 14px;
+    color: #b6bcc2;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 26px 26px 0px 26px;
+}
+.saying img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    margin: 0px auto 16px;
+}
+.tittle-text{
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+}
+
+.text3-1{
+    color: #2d3238;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+
+#begin{
+    width: 100%;
+    height: 320px;
+    background-color: #2b3747;
+    border-bottom: solid 1px #404c5b;
+}
+#begin p{
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    padding: 86px 0px 55px;
+}
+#begin button{
+    display: block;
+    width: 350px;
+    height: 70px;
+    font-size: 22px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #444444;
+    background-color: #4289db;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0px auto;
+    box-shadow: 2px 2px 4px #333333;
+    cursor: pointer;
+}
+
+
+/*footer部分-------------------------------------------------*/
+
+footer{
+    width: 100%;
+    height: 450px;
+    font-size: 14px;
+    color: #979fa8;
+    background-color: #252f3d;
+}
+.foot-container{
+    width: 980px;
+    height: 380px;
+    padding-top: 70px;
+    margin: 0px auto;
+    position: relative;
+}
+.foot-left{
+    width: 250px;
+    height: 240px;
+    border-right: solid 1px #3b4245;
+    float: left;
+}
+.foot-left img{
+    width: 190px;
+}
+.foot-left p{
+    padding-top: 18px;
+}
+.foot-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #979fa8;
+    border-radius: 50%;
+    float: left;
+    margin: 14px 10px 0px 0px;
+}
+
+.foot-middle{
+    width: 498px;
+    height: 240px;
+    border-right: solid 1px #3b4245;
+    float: left;
+}
+.foot-middle div:first-child{
+    width: 166px;
+    margin-left: 64px;
+    float: left;
+}
+.foot-middle div:last-child{
+    float: left;
+}
+.foot-middle p{
+    padding-bottom: 18px;
+}
+
+.foot-right{
+    float: left;
+    margin-left: 80px;
+}
+.foot-right img{
+    width: 150px;
+    height: 150px;
+    margin-top: 18px;
+}
+
+.foot-container hr{
+    height: 1px;
+    background-color: #667280;
+    margin: 70px 0px 24px;
+    border: 0px;
+}
+.foot-container>img{
+    width: 100px;
+    float: left;
+}
+.foot-container .b-left{
+    font-size: 13px;
+    font-weight: lighter;
+    margin-left: 10px;
+    float: left;
+}
+.foot-container .b-right{
+    font-size: 13px;
+    font-weight: normal;
+    margin-right: 10px;
+    float: right;
+}
+.foot-container .select{
+    width: 98px;
+    height: 36px;
+    text-indent: 1em;
+    color: #ffffff;
+    border: solid 1px #979ea8;
+    border-radius: 3px;
+    background-color: #252f3d;
+    float: right;
+    margin-top: -10px;
+}
+
+
+
+
+.text-size13{
+    font-size: 13px;
+}
+.foot-text1{
+    font-size: 22px;
+    font-weight: 300;
+    color: #ffffff;
+}
+.foot-text2{
+    font-size: 14px;
+    color: #979fa8;
+    transition: color .2s;
+}
+.foot-text2:hover{
+    font-size: 14px;
+    color: #366fbd;
+    transition: color .2s;
+}
+
+
+
+
+
+
+
+
+
 
 
 
