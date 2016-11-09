@@ -492,14 +492,33 @@ footer{
 .foot-left p{
     padding-top: 18px;
 }
+.icons .icon-weixin{
+    font-size: 30px;
+    padding: 16px 10px 0px 0px;
+    float: left;
+}
+.icons .icon-weibo{
+    font-size: 34px;
+    padding: 14px 10px 0px 0px;
+    float: left;
+}
+.icons .icon-zhihu{
+    font-size: 24px;
+    line-height: 34px;
+    color: #252f3d;
+    padding: 0px 3px;
+
+}
 .foot-icon{
-    width: 30px;
-    height: 30px;
+    width: 31px;
+    height: 31px;
     background-color: #979fa8;
     border-radius: 50%;
     float: left;
-    margin: 14px 10px 0px 0px;
+    margin: 17px 10px 0px 0px;
 }
+
+
 
 .foot-middle{
     width: 498px;
@@ -518,6 +537,8 @@ footer{
 .foot-middle p{
     padding-bottom: 18px;
 }
+
+
 
 .foot-right{
     float: left;
@@ -561,6 +582,7 @@ footer{
     background-color: #252f3d;
     float: right;
     margin-top: -10px;
+    cursor: pointer;
 }
 
 
