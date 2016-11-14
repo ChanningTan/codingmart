@@ -130,8 +130,33 @@ function imageToggle(){
     });
 }
 
-imageToggle();
+function navFloat(){
+    var height = document.body.scrollTop;
+    var nav = document.querySelector(".nav-float").style;
+    var opacity = (height-713)>0? ((height-713)/150):0;
 
+    if (opacity>0){
+        nav.display = 'block';
+    }else{
+        nav.display = 'none';
+    }
+    nav.opacity = opacity;
+
+    document.onscroll = function(){
+        height = document.body.scrollTop;
+        opacity = (height-713)>0? ((height-713)/150):0;
+
+        if (opacity>0){
+            nav.display = 'block';
+        }else{
+            nav.display = 'none';
+        }
+        nav.opacity = opacity;
+    }
+}
+
+imageToggle();
+navFloat();
 
 
 
