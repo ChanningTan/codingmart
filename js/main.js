@@ -109,7 +109,7 @@ function imageToggle(){
             clearInterval(auto);
         });
         EventUtil.addEvent(li_dot[i], 'mouseout', function(){
-            auto = setInterval(clickTurnRight, 4000);
+            auto = setInterval(clickTurnRight, 40000);
         });
     }
 
@@ -155,10 +155,22 @@ function navFloat(){
     }
 }
 
+function setMenuShow(){
+    document.querySelector('.span-3').onclick = function(){
+        document.querySelector('.menu').style.display = 'block';
+        document.querySelector('.menu').style.opacity = 1;
+    }
+}
+function setMenuHidden(){
+    document.querySelector('.menu i').onclick = function(){
+        document.querySelector('.menu').style.display = 'none';
+    }
+}
+
 imageToggle();
 navFloat();
-
-
+setMenuShow();
+setMenuHidden();
 
 
 
