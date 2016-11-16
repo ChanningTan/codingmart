@@ -1,0 +1,136 @@
+
+@media screen and (max-width: 750px){
+    .nav, .nav-float, .turn-left, .turn-right{
+        display: none;
+    }
+    .nav-750 {
+        display: block;
+    }
+    header{
+        height: 830px;
+    }
+    #background1,#background1 .black, #background2, #background3{
+        height: 754px;
+    }
+    .content{
+        width: 100%;
+    }
+    .text0{
+        font-size: 34px;
+    }
+    .text1{
+        font-size: 28px;
+    }
+    .text2{
+        font-size: 22px;
+    }
+    .text3{
+        font-size: 14px;
+    }
+
+
+    #background1 p.text1{
+        margin-top: 100px;
+    }
+
+    #background1 p~div{
+        width: 170px;
+    }
+    #background1 a{
+        display: block;
+        margin: 20px auto;
+    }
+
+
+    #background2>.content>div{
+        display: block;
+        width: 100%;
+        margin: 0px;
+    }
+    #background2 img{
+        display: block;
+        width: 180px;
+        float: none;
+        margin: 86px auto 0px;
+    }
+    #background2 p.text0{
+        text-align: center;
+        margin: 14px 0px;
+    }
+    #background2 p.text2{
+        width: 260px;
+        text-align: center;
+        margin: 0px auto 50px;
+    }
+    #background2 a{
+        display: block;
+        width: 90px;
+        margin: 0px auto;
+    }
+
+
+    #background3 img{
+        display: block;
+        margin: -30px auto 22px;
+        float: none;
+    }
+    #background3 .content>div{
+        width: 240px;
+        float: none;
+        margin: 0px auto;
+    }
+    #background3 p.text1{
+        text-align: center;
+    }
+    #background3 p.text3{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #background3 a{
+        display: block;
+        width: 72px;
+        float: none;
+        margin: 0px auto;
+    }
+
+
+    #dots{
+        bottom: 72px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
