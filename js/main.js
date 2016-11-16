@@ -109,7 +109,7 @@ function imageToggle(){
             clearInterval(auto);
         });
         EventUtil.addEvent(li_dot[i], 'mouseout', function(){
-            auto = setInterval(clickTurnRight, 40000);
+            auto = setInterval(clickTurnRight, 4000);
         });
     }
 

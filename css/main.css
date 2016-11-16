@@ -237,9 +237,9 @@ header{
     margin-bottom: 50px;
 }
 #background2 img{
-    width: 340px;
+    max-width: 340px;
     float: right;
-    margin: 46px 50px;
+    margin: 46px 50px 0px 0px;
 }
 
 
@@ -339,7 +339,7 @@ header>ul>li{
 
 /*--------------------*/
 .content{
-    width: 980px;
+    max-width: 980px;
     height: 300px;
     /*background-color: rgba(0, 0, 0, .4);*/
     margin: 0px auto;
@@ -393,11 +393,14 @@ header>ul>li{
 /*---------------------*/
 
 #statistics{
-    width: 980px;
-    height: 100px;
-    margin: 0px auto;
+    width: 100%;
     position: absolute;
     bottom: 12px;
+}
+#statistics div:first-child{
+    max-width: 980px;
+    height: 100px;
+    margin: 0px auto;
 }
 .count{
     width: 33%;
@@ -420,7 +423,7 @@ header>ul>li{
 /*ÄÚÈÝ²¿·Ö---------------------------------------------*/
 
 #container{
-    width: 980px;
+    max-width: 980px;
     margin: 0px auto;
 }
 .process{
@@ -437,23 +440,17 @@ header>ul>li{
     position: relative;
 }
 .content-text{
-    width: 392px;
+    width: 40%;
     display: table-cell;
     vertical-align: middle;
 }
 .right-img{
-    width: 588px;
-    margin: -147px 0px;
-    position: absolute;
-    right: 0px;
-    top: 50%;
+    width: 100%;
+    margin: 61px 0px;
 }
 .left-img{
-    width: 588px;
-    margin: -147px 0px;
-    position: absolute;
-    left: 0px;
-    top: 50%;
+    width: 100%;
+    margin: 61px 0px;
 }
 #mpay-img{
     width: 36px;
@@ -499,17 +496,17 @@ header>ul>li{
     background-color: #dde3eb;
 }
 .people{
-    width: 996px;
+    max-width: 996px;
     margin: 30px auto 0px;
 }
 .saying{
-    width: 314px;
+    width: 31.8%;
     height: 336px;
     background-color: #fff;
     border-left: solid 1px #d5dbe3;
     border-right: solid 1px #d5dbe3;
     border-radius: 5px 5px 0px 0px;
-    margin: 0px 8px;
+    margin: 0px 0.5%;
     float: left;
 }
 .saying-text{
@@ -580,7 +577,7 @@ footer{
     background-color: #252f3d;
 }
 .foot-container{
-    width: 980px;
+    max-width: 980px;
     height: 380px;
     padding-top: 70px;
     margin: 0px auto;
@@ -627,7 +624,7 @@ footer{
 
 
 .foot-middle{
-    width: 498px;
+    width: 50%;
     height: 240px;
     border-right: solid 1px #3b4245;
     float: left;
