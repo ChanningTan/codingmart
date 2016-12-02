@@ -26,6 +26,7 @@ body, button{
 
 
 /*-----------header部分-------------------------------------------*/
+
 header{
     height: 712px;
     /*background-color: antiquewhite;*/
@@ -122,7 +123,7 @@ header{
 }
 
 
-/*@media 750 ------------------------*/
+/* nav @media 750 ------------------------*/
 .nav-750{
     display: none;
     width: 100%;
@@ -191,7 +192,7 @@ header{
 
 
 
-
+/* background -----------------------------*/
 #background1{
     height: 600px;
     background: url('../res/bg1.jpg');
@@ -275,6 +276,10 @@ header>ul>li{
     width: 100%;
     position: absolute;
 }
+
+
+
+/* dots & arrows----------------*/
 .turn-left{
     width: 60;
     height: 140px;
@@ -306,8 +311,6 @@ header>ul>li{
 .turn-left:hover, .turn-right:hover{
     color: #fff;
 }
-
-
 #dots{
     width: 100%;
     height: 30px;
@@ -337,7 +340,7 @@ header>ul>li{
 }
 
 
-/*--------------------*/
+/* header 通用--------------------*/
 .content{
     max-width: 980px;
     height: 300px;
@@ -390,8 +393,9 @@ header>ul>li{
     background-color: #ffffff;
     transition: all .2s;
 }
-/*---------------------*/
 
+
+/* 统计数据-----------------------*/
 #statistics{
     width: 100%;
     position: absolute;
@@ -417,6 +421,7 @@ header>ul>li{
     font-size: 14px;
     text-align: center;
 }
+
 
 
 
@@ -490,6 +495,7 @@ header>ul>li{
 
 
 
+/* about saying ----------------------*/
 #about-saying{
     width: 100%;
     height: 560px;
@@ -539,6 +545,9 @@ header>ul>li{
 }
 
 
+
+
+/* begin -------------------------------*/
 #begin{
     width: 100%;
     height: 320px;
@@ -565,6 +574,10 @@ header>ul>li{
     box-shadow: 2px 2px 4px #333333;
     cursor: pointer;
 }
+
+
+
+
 
 
 /*footer部分-------------------------------------------------*/
