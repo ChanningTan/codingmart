@@ -198,9 +198,9 @@
         left: 50%;
         margin: 0px -196px;
     }
-    .content-text::after{
-        clear: both;
-    }
+    /*.content-text::after{*/
+        /*clear: both;*/
+    /*}*/
     .content-text p{
         text-align: center;
     }
